@@ -135,7 +135,7 @@ paths:
         in: path
         required: true
     get:
-      summary: View Job
+      summary: View Job!!!!!!!!
       responses:
         200:
           description: OK
@@ -143,6 +143,12 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Job'
+    delete:
+      summary: Delete Job
+      responses:
+        '204':
+          description: No Content
+
     put:
       summary: Modify Job
       responses:
@@ -172,10 +178,10 @@ paths:
           description: Get List
 
     post:
-      summary: Create Job Application
+      summary: Create Job Application!
       responses:
         201:
-          description: Created
+          description: Created!!
           headers:
             Location:
               schema:
